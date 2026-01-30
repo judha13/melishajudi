@@ -75,7 +75,7 @@ export default function Hero() {
               src="/home/profile.png"
               alt="Melisha Judi S"
               fill
-              className="object-cover object-top"
+              className="object-cover object-[center_10%]"
               priority
             />
           </div>
