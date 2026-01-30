@@ -103,27 +103,41 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass mt-4 rounded-xl overflow-hidden"
-          >
-            <div className="flex flex-col p-4 space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-slate-600 dark:text-slate-300"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-          </motion.div>
+          <>
+            {/* Backdrop for mobile menu */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40 md:hidden"
+            />
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              className="absolute top-full left-6 right-6 md:hidden glass mt-4 rounded-2xl overflow-hidden z-50 shadow-2xl border border-white/20 dark:border-slate-800"
+            >
+              <div className="flex flex-col p-6 space-y-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl">
+                {navLinks.map((link, idx) => (
+                  <motion.a
+                    key={link.name}
+                    href={link.href}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: idx * 0.05 }}
+                    onClick={() => setIsOpen(false)}
+                    className="text-lg font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-500 dark:hover:text-sky-400 transition-colors py-2 border-b border-slate-100 dark:border-slate-800 last:border-0"
+                  >
+                    {link.name}
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
+
     </nav>
   );
 }
