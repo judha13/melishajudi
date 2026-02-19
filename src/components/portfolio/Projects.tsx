@@ -18,13 +18,13 @@ const projects = [
     link: '#',
     github: '#',
   },
-  {
-    title: 'Chatbot Integration',
-    description: 'Seamless integration of an AI-powered chatbot into existing web platforms to enhance customer support.',
-    tags: ['NestJS', 'OpenAI', 'WebSocket'],
-    link: '#',
-    github: '#',
-  },
+  // {
+  //   title: 'Chatbot Integration',
+  //   description: 'Seamless integration of an AI-powered chatbot into existing web platforms to enhance customer support.',
+  //   tags: ['NestJS', 'OpenAI', 'WebSocket'],
+  //   link: '#',
+  //   github: '#',
+  // },
   {
     title: 'Personal Portfolio',
     description: 'A modern, clean portfolio website showcasing my skills, experience, and projects.',

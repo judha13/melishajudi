@@ -40,7 +40,7 @@ export default function Footer() {
             {[Github, Linkedin, Mail].map((Icon, idx) => (
               <a
                 key={idx}
-                href="#"
+                href={Icon === Github ? "#" : Icon === Linkedin ? "https://www.linkedin.com/in/melisha-judi-s-036860371?utm_source=share_via&utm_content=profile&utm_medium=member_android" : Icon === Mail ? "mailto:melishajudi2002@gmail.com" : "#"}
                 className="p-3 rounded-full glass hover:bg-sky-500/10 hover:text-sky-500 transition-all"
               >
                 <Icon size={20} />

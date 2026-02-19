@@ -16,12 +16,12 @@ const achievements = [
     icon: Trophy,
     stat: '50+ Charts',
   },
-  {
-    title: 'Chatbot Success',
-    description: 'Reduced customer support response time by 60% through AI chatbot integration.',
-    icon: Star,
-    stat: '60% Faster',
-  },
+  // {
+  //   title: 'Chatbot Success',
+  //   description: 'Reduced customer support response time by 60% through AI chatbot integration.',
+  //   icon: Star,
+  //   stat: '60% Faster',
+  // },
 ];
 
 export default function Achievements() {
@@ -39,7 +39,7 @@ export default function Achievements() {
           <div className="w-20 h-1.5 bg-sky-500 mx-auto rounded-full mb-8" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {achievements.map((achievement, idx) => (
             <motion.div
               key={idx}

@@ -6,15 +6,15 @@ import { GraduationCap, Languages } from 'lucide-react';
 export default function Education() {
   const education = [
     {
-      degree: "Bachelor's in Computer Science",
-      school: 'Example University',
-      cgpa: '8.5/10',
-      year: '2019 - 2022',
+      degree: "B.E - CSE",
+      school: "St. Xavier's Catholic College of Engineering",
+      cgpa: 'CGPA: 8.55',
+      year: '2019 - 2023',
     },
     {
-      degree: 'High School',
-      school: 'Example Higher Secondary School',
-      cgpa: '9.0/10',
+      degree: 'HSC',
+      school: 'Ringle Taube Higher Secondary School',
+      cgpa: 'Grade: 83.83%',
       year: '2017 - 2019',
     },
   ];
@@ -57,7 +57,7 @@ export default function Education() {
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">{edu.school}</p>
                   <div className="flex justify-between items-center text-xs font-semibold uppercase tracking-wider">
                     <span className="text-sky-500">{edu.year}</span>
-                    <span className="px-2 py-1 rounded-lg glass bg-sky-500/5 text-sky-600 dark:text-sky-400">CGPA: {edu.cgpa}</span>
+                    <span className="px-2 py-1 rounded-lg glass bg-sky-500/5 text-sky-600 dark:text-sky-400">{edu.cgpa}</span>
                   </div>
                 </motion.div>
               ))}

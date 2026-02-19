@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="flex gap-6">
             {[
               { Icon: Github, href: 'https://github.com' },
-              { Icon: Linkedin, href: 'https://linkedin.com' },
+              { Icon: Linkedin, href: 'https://www.linkedin.com/in/melisha-judi-s-036860371?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
               { Icon: Mail, href: 'mailto:melishajudi2002@gmail.com' }
             ].map((item, i) => (
               <a

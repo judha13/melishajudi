@@ -20,7 +20,7 @@ const contactInfo = [
     icon: Linkedin,
     label: 'LinkedIn',
     value: 'linkedin.com/in/melishajudi',
-    href: 'https://linkedin.com/in/melishajudi',
+    href: 'https://www.linkedin.com/in/melisha-judi-s-036860371?utm_source=share_via&utm_content=profile&utm_medium=member_android',
   },
   {
     icon: Github,
@@ -68,7 +68,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-slate-500 font-bold mb-1">{info.label}</p>
-                  <p className="text-lg font-semibold dark:text-slate-200">{info.value}</p>
+                  <p className="text-sm md:text-lg font-semibold dark:text-slate-200">{info.value}</p>
                 </div>
               </motion.a>
             ))}

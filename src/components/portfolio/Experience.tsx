@@ -7,10 +7,10 @@ const experiences = [
   {
     title: 'Full Stack Web Developer',
     company: 'Forward Growth Pvt Ltd',
-    period: '2022 - Present',
+    period: '2024 - Present',
     points: [
       'Developed advanced dashboards with complex charts for data visualization.',
-      'Integrated intelligent chatbots to improve user engagement and support.',
+      // 'Integrated intelligent chatbots to improve user engagement and support.',
       'Built SEO-optimized product promotion websites featuring book demo functionality.',
       'Designed and managed scalable databases using PostgreSQL and MySQL.',
     ],
